@@ -1,0 +1,279 @@
+
+body{
+    background-color:#17191D;
+    color:aliceblue;
+}
+/*
+nav{
+    display:flex;
+    align-items:end;
+    justify-content: end;
+} */
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 40px;
+    border-bottom: 1px solid #333333;
+
+}
+.name{
+    font-size:24px;
+    font-weight:bold;
+
+}
+nav a{
+    text-decoration: none;
+    color:grey;
+    font-size:15px;
+}
+nav a:hover{
+    color:whitesmoke;
+}
+.sect{
+    padding:100px 40px;
+}
+.sect h1{
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+.sect p{
+    font-size:18px;
+    color:#B0B0B0;
+    line-height:1.6;
+}
+.sect a{
+    display:inline-block;
+    padding:12px 24px;
+    background-color: #FFFFFF;
+    color:#17191D;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.sect a:hover{
+    background-color: #D1D5DB;
+
+}
+#about{
+
+padding:60px 40px;
+
+
+}
+#about h2{
+    font-size:36px;
+    color:white;
+    margin-bottom: 25px;
+}
+#about h3{
+    font-size:24px;
+    color:white;
+    margin-bottom:10px;
+}
+#about p{
+    font-size:16px;
+    color:#B0B0B0;
+    line-height: 1.7;
+    margin-bottom:20px;
+    max-width:600px;
+}
+
+#projects{
+    padding:60px 40px;
+}
+
+#projects h2{
+    font-size:30px;
+}
+
+
+
+.project-card{
+    background-color: #1E2025;
+    padding:25px;
+    border:1px solid #333333;
+    border-radius:10px;
+    max-width:500px;
+}
+.project-card h3{
+    font-size: 24px;
+    font-weight:bold;
+}
+.project-card:hover{
+    transform:translateY(-5px);
+    border-color:#666666;
+    transition: 0.3s;
+}
+
+.status{
+    display:inline-block;
+    color:#df6916;
+    background-color:#332b18;
+    padding: 5px 12px ;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.tech{
+    display:inline-block;
+    color:#D1D5DB;
+    background-color:#2A2D33;
+    padding:6px 12px;
+    border-radius:10px;
+    font-size: 13px;
+}
+.ready{
+    display:inline-block;
+    color:#D1D5DB;
+    background-color: #2f2e2e;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+
+.projects-container{
+    margin-left:40px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:15px;
+}
+
+.skills-container{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    max-width:800px;
+}
+
+.skill{
+    background-color: #1E2025;
+    color:#D1D5DB;
+    padding:10px 16px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-size:14px;
+}
+.skill:hover{
+
+    background-color: #333333;
+    border-color:#666666;
+    transition:0.3s;
+}
+#skills{
+    padding:20px 40px 40px;
+}
+#skills h2{
+    font-size:30px;
+}
+
+
+
+.contact-links{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+.contact-links a{
+    color:white;
+    text-decoration: none;
+    background-color: #252830;
+    padding:12px 20px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    transition:0.3s;
+
+}
+
+.contact-links a:hover{
+    background-color: #333333;
+    border-color:#666666;
+}
+#contact{
+    padding:40px;
+}
+
+#contact h2{
+
+    font-size:30px;
+
+}
+footer{
+    text-align:center;
+    padding:25px;
+    color:#777777;
+    border-top:1px solid #333333;
+    font-size:14px;
+
+}
+
+@media (max-width: 600px){
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+    .navbar{
+        padding: 15px 20px;
+    }
+    .navbar nav{
+        gap: 12px;
+    }
+
+    #about,#projects,#skills,#contact{
+        padding:30px 20px;
+    }
+
+    .sect{
+        padding:60px 20px;
+
+    }
+    .sect h1{
+        font-size: 36px;
+
+    }
+    .sect p{
+        font-size: 16px;
+    }
+    .about-container{
+        grid-template-columns: 1fr;
+        gap:25px;
+    }
+    .about-card{
+        max-width:100%;
+    }
+
+}
+
+.about-container{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:40px;
+    align-items: start;
+}
+
+.about-card :hover{
+    transform: translateY(-5px);
+    border-color:#666666;
+    transition: 0.3s;
+}
+
+
+.about-card{
+    background-color: #1E2025;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding:25px;
+    max-width:350px;   
+}
+.about-card h3{
+    font-size:24px;
+    color:white;
+    margin-bottom:15px;   
+}
+
+.about-card p{
+    color: #9CA3AF;
+    line-height:1.6;
+}
